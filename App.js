@@ -1,12 +1,15 @@
 import React from "react";
 import {View,Text,StyleSheet} from "react-native";
+import Name from './component/Name';
 export default class App extends React.Component{
   
   render(){
 
     return( 
     <View style={styles.container}>
-      <Text style={styles.textAnuj} >Hello Anuj Bidkar</Text>
+     <Name name="anuj"/>
+     <Name name="Bidkar"/>
+
     </View>
     );
 
@@ -19,13 +22,10 @@ export default class App extends React.Component{
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    backgroundColor:"#c1c1c1",
+    backgroundColor:"pink",
     alignItems:"center",
     justifyContent:"center",
     fontSize:60
   },
-  textAnuj:{
-    color:"red",
-    fontSize:30
-  }
+  
 })
